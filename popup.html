@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube grayscale</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="settings.js" defer></script>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <h1>YouTube grayscale</h1>
+  <p>Choose what appears in grayscale. Hover to bring back color.</p>
+  <fieldset disabled>
+    <legend>Components</legend>
+    <label><input type="checkbox" id="thumbnails"><span>Thumbnails<small>Video previews and recommendations</small></span></label>
+    <label><input type="checkbox" id="avatars"><span>Avatars<small>Channel and profile pictures</small></span></label>
+    <label><input type="checkbox" id="shorts"><span>Shorts<small>Shorts previews and videos</small></span></label>
+    <label><input type="checkbox" id="player"><span>Video player<small>The video you are watching</small></span></label>
+  </fieldset>
+  <p id="status" role="status" aria-live="polite">Loading settings...</p>
+</body>
+</html>

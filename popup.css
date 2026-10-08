@@ -1,0 +1,11 @@
+:root { color-scheme: light dark; font: 14px/1.45 system-ui, sans-serif; }
+body { width: 290px; margin: 0; padding: 20px; background: light-dark(#fafafa, #202124); color: light-dark(#202124, #eee); }
+h1 { font-size: 19px; margin: 0 0 8px; }
+p { color: light-dark(#595959, #bbb); margin: 0 0 16px; }
+fieldset { border: 0; padding: 0; margin: 0; }
+legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+label { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid light-dark(#ddd, #444); cursor: pointer; }
+input { width: 17px; height: 17px; margin: 0; accent-color: light-dark(#333, #ddd); }
+input:focus-visible { outline: 2px solid light-dark(#2463eb, #8ab4f8); outline-offset: 4px; }
+small { display: block; color: light-dark(#666, #aaa); font-size: 12px; margin-top: 2px; }
+#status { font-size: 12px; margin: 14px 0 0; min-height: 18px; }

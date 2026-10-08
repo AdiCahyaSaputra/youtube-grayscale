@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube grayscale",
+  "version": "1.0.0",
+  "description": "Choose which YouTube images and videos become grayscale. Hover to restore color.",
+  "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-grayscale@local.extension",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  },
+  "action": {
+    "default_title": "YouTube grayscale",
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "icons": { "48": "icon.svg", "96": "icon.svg" },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["settings.js", "content.js"],
+    "run_at": "document_start"
+  }]
+}
